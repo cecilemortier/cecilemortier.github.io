@@ -1,0 +1,43 @@
+@font-face { font-family: 'Playfair Display'; src: url('PlayfairDisplay-Medium.ttf'); }
+
+body {
+	background-color: #FFFFE0;
+	background-image: url("../images/flowers.png");
+	
+	text-align: center;
+	font-size: 1.5vw;
+	font-family: 'Playfair Display';
+}
+.header {
+	margin: 1em auto;
+	padding: 1em;
+	display: block;
+}
+.headimage {
+	max-width: 15vw;
+}
+span.hidden {
+	display: none;
+}
+.flex-container {
+	display: flex;
+	flex-wrap: wrap;
+}
+.flex-item {
+	padding: 0.5em;
+	flex: 30%;
+	width: 30vw;
+	border-radius: 5%;
+}
+@media (orientation: portrait) {
+	body {
+		font-size: 3vw;
+	}
+	.headimage {
+		max-width: 30vw;
+	}
+	.flex-item {
+		flex: 100%;
+		margin: 1em 10%;
+	}
+}
